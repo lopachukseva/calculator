@@ -1,2 +1,71 @@
 @import"reset.css";
 
+.calculator {
+    width: 260px;
+    height: 520px;
+    margin: 50px auto;
+    background-color: #000000;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(32, 32, 32);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.num-field {
+    display: flex;
+    padding-right: 25px;
+    height: 200px;
+    font-size: 3.5em;
+    color: #ffffff;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(5, 50px);
+    gap: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-content: end;
+}
+
+.calculator-button {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.3em;
+    user-select: none;
+    cursor: pointer;
+}
+
+.calculator-button:hover {
+    filter: brightness(110%);
+}
+
+.calculator-button:active {
+    filter: brightness(90%);
+}
+
+.extended {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 110px;
+}
+
+.orange {
+    background-color: #fd9f01;
+}
+
+.grey {
+    background-color: #a5a5a5;
+    color: black;
+}
