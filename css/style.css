@@ -18,6 +18,8 @@
     color: #ffffff;
     justify-content: flex-end;
     align-items: flex-end;
+    overflow: hidden;
+
 }
 
 .calculator-buttons {
